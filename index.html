@@ -3,281 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Adrián Pérez Cobo - Backend and Android Software Developer" />
-  <title>Adrián Pérez Cobo | Software Developer</title>
-
-  <style>
-    :root {
-      --bg: #0d1117;
-      --card: #161b22;
-      --text: #e6edf3;
-      --muted: #8b949e;
-      --border: #30363d;
-      --accent: #58a6ff;
-      --accent-hover: #79c0ff;
-      --button-text: #ffffff;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .container {
-      width: min(900px, calc(100% - 40px));
-      margin: 0 auto;
-    }
-
-    header {
-      padding: 90px 0 45px;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2.3rem, 7vw, 4.5rem);
-      line-height: 1.05;
-    }
-
-    .subtitle {
-      margin-top: 14px;
-      color: var(--muted);
-      font-size: 1.15rem;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 11px 18px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      color: var(--button-text);
-      background: var(--card);
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.2s ease;
-    }
-
-    .button:hover {
-      border-color: var(--accent);
-      color: var(--accent-hover);
-      transform: translateY(-1px);
-    }
-
-    .button.primary {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #08111f;
-    }
-
-    .button.primary:hover {
-      color: #08111f;
-      background: var(--accent-hover);
-    }
-
-    main {
-      padding-bottom: 70px;
-    }
-
-    section {
-      margin: 24px 0;
-      padding: 28px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: var(--card);
-    }
-
-    h2 {
-      margin-top: 0;
-      margin-bottom: 14px;
-      font-size: 1.5rem;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
-    }
-
-    .skill {
-      padding: 7px 11px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    footer {
-      padding: 10px 0 35px;
-      color: var(--muted);
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        padding-top: 60px;
-      }
-
-      section {
-        padding: 22px;
-      }
-
-      .button {
-        width: 100%;
-        text-align: center;
-      }
-    }
-  </style>
+  <meta name="description" content="Adrián Pérez Cobo — Backend & Android Software Developer" />
+  <title>ADRIAN.EXE</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <div class="container">
-    <header>
-      <h1>Adrián Pérez Cobo</h1>
-      <p class="subtitle">Software Developer · Backend & Android</p>
+  <div class="scanlines"></div>
 
-      <div class="buttons">
-        <a
-          class="button primary"
-          href="https://play.google.com/store/apps/dev?id=8977782208284151312"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Google Play Apps
-        </a>
-
-        <a
-          class="button"
-          href="https://www.linkedin.com/in/adrianprzcobo/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-
-        <a class="button" href="cv.pdf" download>
-          Download CV
-        </a>
-      </div>
+  <main class="terminal">
+    <header class="topbar">
+      <span>ADRIAN.EXE</span>
+      <span class="status">● ONLINE</span>
     </header>
 
-    <main>
-      <section>
-        <h2>About me</h2>
+    <section class="screen">
+      <div class="boot" id="boot">
+        <p>&gt; INITIALIZING PORTFOLIO...</p>
+        <p>&gt; LOADING BACKEND_MODULE...</p>
+        <p>&gt; LOADING ANDROID_MODULE...</p>
+        <p>&gt; READY.</p>
+      </div>
 
-        <p>
-          👋 Hi, I’m Adrián, a software developer focused on two main areas:
-          backend development and Android application development.
-        </p>
+      <section class="hero">
+        <p class="prompt">C:\\USERS\\ADRIAN&gt; whoami</p>
+        <h1>ADRIÁN PÉREZ COBO<span class="cursor">_</span></h1>
+        <p class="role">SOFTWARE DEVELOPER // BACKEND + ANDROID</p>
 
-        <p>
-          💼 <strong>Backend development:</strong> I have professional experience
-          working with Java, Spring Boot, microservices, SQL, REST APIs, Git,
-          Postman and related technologies. I enjoy building maintainable backend
-          solutions and continuing to improve my knowledge of software architecture.
-        </p>
-
-        <p>
-          📱 <strong>Android development:</strong> I develop Android applications
-          using Kotlin and Jetpack Compose. I have created more than 10 Android
-          apps, including several published on Google Play.
-        </p>
-
-        <p>
-          I’m adaptable, learn quickly and enjoy working as part of a team.
-          I’m always open to learning new technologies, tools and ways of working.
-        </p>
-      </section>
-
-      <section>
-        <h2>Technologies</h2>
-
-        <div class="skills">
-          <span class="skill">Java</span>
-          <span class="skill">Spring Boot</span>
-          <span class="skill">Microservices</span>
-          <span class="skill">REST APIs</span>
-          <span class="skill">SQL</span>
-          <span class="skill">Git</span>
-          <span class="skill">Postman</span>
-          <span class="skill">Kotlin</span>
-          <span class="skill">Jetpack Compose</span>
-          <span class="skill">Android</span>
+        <div class="quick-links">
+          <a href="https://www.linkedin.com/in/adrianprzcobo/" target="_blank" rel="noopener noreferrer">[ LINKEDIN ]</a>
+          <a href="https://github.com/adrianprzcb" target="_blank" rel="noopener noreferrer">[ GITHUB ]</a>
+          <a href="https://play.google.com/store/apps/dev?id=8977782208284151312" target="_blank" rel="noopener noreferrer">[ GOOGLE PLAY ]</a>
+          <a href="cv.pdf" download>[ DOWNLOAD CV ]</a>
         </div>
       </section>
 
-      <section>
-        <h2>Android apps</h2>
-        <p>
-          I publish Android applications under
-          <strong>Rushers ADR</strong>. You can see my currently published apps
-          on Google Play.
-        </p>
-
-        <p>
-          <a
-            href="https://play.google.com/store/apps/dev?id=8977782208284151312"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View my apps on Google Play →
-          </a>
-        </p>
+      <section class="block">
+        <p class="prompt">C:\\USERS\\ADRIAN&gt; type about.txt</p>
+        <p>Hi, I’m Adrián, a software developer focused mainly on <strong>backend development</strong> and <strong>Android development</strong>.</p>
+        <p>On the backend side, I have professional experience with Java, Spring Boot, microservices, SQL, REST APIs, Git and Postman. I like building clean, maintainable systems and learning more about software architecture.</p>
+        <p>On Android, I build apps using Kotlin and Jetpack Compose. I have created more than 10 Android apps, including several published on Google Play.</p>
+        <p>I learn quickly, adapt easily and enjoy working with other developers.</p>
       </section>
 
-      <section>
-        <h2>Contact & profiles</h2>
-        <p>
-          <a
-            href="https://www.linkedin.com/in/adrianprzcobo/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          ·
-          <a
-            href="https://github.com/adrianprzcb"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
+      <section class="block">
+        <p class="prompt">C:\\USERS\\ADRIAN&gt; dir skills\\</p>
+        <div class="skills">
+          <span>JAVA</span><span>SPRING BOOT</span><span>MICROSERVICES</span><span>REST API</span><span>SQL</span><span>GIT</span><span>POSTMAN</span><span>KOTLIN</span><span>JETPACK COMPOSE</span><span>ANDROID</span>
+        </div>
       </section>
-    </main>
 
-    <footer>
-      © 2026 Adrián Pérez Cobo
-    </footer>
-  </div>
+      <section class="block">
+        <p class="prompt">C:\\USERS\\ADRIAN&gt; run apps.exe</p>
+        <div class="retro-card">
+          <div>
+            <h2>ANDROID APPS</h2>
+            <p>Apps published on Google Play under my developer account.</p>
+          </div>
+          <a class="retro-button" href="https://play.google.com/store/apps/dev?id=8977782208284151312" target="_blank" rel="noopener noreferrer">OPEN GOOGLE PLAY &gt;</a>
+        </div>
+      </section>
+
+      <section class="block">
+        <p class="prompt">C:\\USERS\\ADRIAN&gt; contact</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/adrianprzcobo/" target="_blank" rel="noopener noreferrer">linkedin.com/in/adrianprzcobo</a></p>
+        <p>GitHub: <a href="https://github.com/adrianprzcb" target="_blank" rel="noopener noreferrer">github.com/adrianprzcb</a></p>
+      </section>
+
+      <footer>
+        <span>© <span id="year"></span> ADRIÁN PÉREZ COBO</span>
+        <span id="clock">00:00:00</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

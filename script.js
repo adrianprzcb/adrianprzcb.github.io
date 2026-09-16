@@ -1,124 +1,81 @@
-// ==========================================================
-// ADRIAN.EXE
-// Portfolio interactions
-// No libraries. No tracking.
-// ==========================================================
+/* =========================================================
+   ADRIÁN PÉREZ COBO — PORTFOLIO
+========================================================= */
 
 
-// ----------------------------------------------------------
-// CURRENT YEAR
-// ----------------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
 
-const yearElement = document.getElementById("year");
+    setCurrentYear();
 
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
-}
-
-
-// ----------------------------------------------------------
-// TERMINAL CLOCK
-// ----------------------------------------------------------
-
-const clockElement = document.getElementById("clock");
-
-function updateClock() {
-
-  if (!clockElement) {
-    return;
-  }
-
-  const now = new Date();
-
-  const time = now.toLocaleTimeString("en-GB", {
-    hour12: false,
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit"
-  });
-
-  clockElement.textContent = time;
-}
-
-updateClock();
-
-setInterval(updateClock, 1000);
-
-
-// ----------------------------------------------------------
-// BOOT SEQUENCE
-// ----------------------------------------------------------
-
-const bootLines = document.querySelectorAll("#boot p");
-
-bootLines.forEach((line, index) => {
-
-  line.style.opacity = "0";
-  line.style.transform = "translateX(-4px)";
-
-  setTimeout(() => {
-
-    line.style.opacity = "1";
-    line.style.transform = "translateX(0)";
-
-  }, index * 140);
+    enableRevealAnimations();
 
 });
 
 
-// ----------------------------------------------------------
-// EXTERNAL LINKS
-// ----------------------------------------------------------
+/* =========================================================
+   CURRENT YEAR
+========================================================= */
 
-// Security fallback for every link that opens a new tab.
+function setCurrentYear() {
 
-document
-  .querySelectorAll('a[target="_blank"]')
-  .forEach((link) => {
+    const yearElement = document.getElementById("year");
 
-    link.setAttribute(
-      "rel",
-      "noopener noreferrer"
+    if (!yearElement) {
+        return;
+    }
+
+    yearElement.textContent = new Date().getFullYear();
+
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+function enableRevealAnimations() {
+
+    const elements = document.querySelectorAll(
+        ".section, .connect"
     );
 
-  });
+
+    elements.forEach(element => {
+
+        element.classList.add("reveal");
+
+    });
 
 
-// ----------------------------------------------------------
-// TERMINAL HOVER EFFECT
-// ----------------------------------------------------------
+    const observer = new IntersectionObserver(
 
-const interactiveCards = document.querySelectorAll(
-  ".stack-card, .capability, .feature"
-);
+        entries => {
 
-interactiveCards.forEach((card) => {
+            entries.forEach(entry => {
 
-  card.addEventListener("mouseenter", () => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
 
-    card.dataset.active = "true";
+                entry.target.classList.add("visible");
 
-  });
+                observer.unobserve(entry.target);
 
-  card.addEventListener("mouseleave", () => {
+            });
 
-    delete card.dataset.active;
+        },
 
-  });
+        {
+            threshold: 0.08
+        }
 
-});
+    );
 
 
-// ----------------------------------------------------------
-// CONSOLE MESSAGE
-// ----------------------------------------------------------
+    elements.forEach(element => {
 
-console.log(
-  "%cADRIAN.EXE",
-  "color: #7cff6b; font-size: 20px; font-weight: bold;"
-);
+        observer.observe(element);
 
-console.log(
-  "%cBackend Software Developer | Java | Spring Boot | Android",
-  "color: #48b83e;"
-);
+    });
+
+}

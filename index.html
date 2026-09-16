@@ -1,846 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <meta
-    name="description"
-    content="Adrián Pérez Cobo — Backend Software Developer specialized in Java, Spring Boot, microservices and Android development."
-  />
+    <meta
+        name="description"
+        content="Adrián Pérez Cobo — Backend Developer specialized in Java, Spring Boot, REST APIs and microservices. Android developer with Kotlin and Jetpack Compose."
+    >
 
-  <meta
-    name="keywords"
-    content="Adrián Pérez Cobo, Backend Developer, Java Developer, Spring Boot, Microservices, Android Developer, Kotlin, Software Developer"
-  />
+    <meta
+        name="keywords"
+        content="Adrián Pérez Cobo, Backend Developer, Java, Spring Boot, REST APIs, Microservices, Kafka, Android, Kotlin, Jetpack Compose"
+    >
 
-  <meta name="author" content="Adrián Pérez Cobo" />
+    <meta
+        name="author"
+        content="Adrián Pérez Cobo"
+    >
 
-  <title>Adrián Pérez Cobo | Backend Software Developer</title>
+    <title>Adrián Pérez Cobo | Backend Developer</title>
 
-  <link rel="stylesheet" href="styles.css" />
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
 </head>
+
 
 <body>
 
-  <div class="scanlines"></div>
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
-  <main class="terminal">
+    <header class="site-header">
 
-    <!-- =======================================================
-         TOP BAR
-    ======================================================== -->
+        <a
+            class="logo"
+            href="#top"
+            aria-label="Go to top"
+        >
+            AP<span>.</span>
+        </a>
 
-    <header class="topbar">
-      <span>ADRIAN.EXE</span>
 
-      <span class="status">
-        <span class="status-dot"></span>
-        ONLINE
-      </span>
+        <nav class="navigation">
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#experience">
+                Experience
+            </a>
+
+            <a href="#stack">
+                Stack
+            </a>
+
+        </nav>
+
+
+        <a
+            class="header-link"
+            href="cv.pdf"
+            target="_blank"
+        >
+            CV ↗
+        </a>
+
     </header>
 
 
-    <section class="screen">
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
 
-      <!-- =====================================================
-           BOOT SEQUENCE
-      ====================================================== -->
-
-      <div class="boot" id="boot">
-        <p>&gt; INITIALIZING PORTFOLIO...</p>
-        <p>&gt; LOADING BACKEND_MODULE...</p>
-        <p>&gt; LOADING JAVA_SPRING_ENVIRONMENT...</p>
-        <p>&gt; LOADING ANDROID_MODULE...</p>
-        <p>&gt; SYSTEM READY.</p>
-      </div>
+    <main id="top">
 
 
-      <!-- =====================================================
-           HERO
-      ====================================================== -->
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
-      <section class="hero">
+        <section class="hero">
 
-        <p class="prompt">
-          C:\USERS\ADRIAN&gt; whoami
-        </p>
-
-        <h1>
-          ADRIÁN PÉREZ COBO<span class="cursor">_</span>
-        </h1>
-
-        <p class="role">
-          BACKEND SOFTWARE DEVELOPER
-          <span class="role-separator">//</span>
-          JAVA + SPRING BOOT
-          <span class="role-separator">//</span>
-          ANDROID
-        </p>
-
-        <p class="hero-description">
-          I build
-          <strong>backend systems, REST APIs, microservices and Android applications</strong>,
-          with a strong focus on clean architecture, maintainable code and
-          real-world software.
-        </p>
-
-
-        <div class="quick-links">
-
-          <a
-            href="https://www.linkedin.com/in/adrianprzcobo/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            [ LINKEDIN ]
-          </a>
-
-          <a
-            href="https://github.com/adrianprzcb"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            [ GITHUB ]
-          </a>
-
-          <a
-            href="https://play.google.com/store/apps/dev?id=8977782208284151312"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            [ GOOGLE PLAY ]
-          </a>
-
-          <a href="cv.pdf" download>
-            [ DOWNLOAD CV ]
-          </a>
-
-        </div>
-
-      </section>
-
-
-      <!-- =====================================================
-           ABOUT ME
-      ====================================================== -->
-
-      <section class="block" id="about">
-
-        <p class="prompt">
-          C:\USERS\ADRIAN&gt; type about.txt
-        </p>
-
-        <div class="section-heading">
-          <span class="section-number">01.</span>
-          <h2>ABOUT ME</h2>
-        </div>
-
-        <div class="text-content">
-
-          <p>
-            I'm a
-            <strong>
-              Software Developer focused primarily on Backend Engineering
-              with Java and Spring Boot.
-            </strong>
-          </p>
-
-          <p>
-            My professional work revolves around designing, implementing
-            and maintaining backend applications, including
-            <strong>
-              REST APIs, database persistence, business logic
-              and microservice-based systems.
-            </strong>
-          </p>
-
-          <p>
-            Alongside backend development, I also build
-            <strong>native Android applications with Kotlin</strong>,
-            taking personal projects from the initial idea all the way
-            to publication on Google Play.
-          </p>
-
-          <p>
-            I enjoy understanding the complete system — not only writing code,
-            but also thinking about
-            <strong>
-              architecture, data modelling, API design, performance
-              and maintainability.
-            </strong>
-          </p>
-
-        </div>
-
-      </section>
-
-
-      <!-- =====================================================
-           PROFESSIONAL BACKEND EXPERIENCE
-      ====================================================== -->
-
-      <section class="block" id="experience">
-
-        <p class="prompt">
-          C:\USERS\ADRIAN&gt; type experience.log
-        </p>
-
-        <div class="section-heading">
-          <span class="section-number">02.</span>
-          <h2>BACKEND EXPERIENCE</h2>
-        </div>
-
-
-        <div class="experience-card">
-
-          <div class="experience-header">
-
-            <div>
-              <span class="experience-label">
-                PROFESSIONAL EXPERIENCE
-              </span>
-
-              <h3>Java & Spring Backend Development</h3>
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                Backend Developer
             </div>
 
-            <span class="experience-status">
-              PRIMARY SPECIALIZATION
-            </span>
 
-          </div>
+            <h1>
+                Adrián Pérez Cobo
+            </h1>
 
 
-          <p>
-            Most of my
-            <strong>Java and Spring Boot experience comes from professional work for companies</strong>,
-            where I have worked on backend systems, REST APIs,
-            business logic, databases and microservice-based applications.
-          </p>
-
-          <p>
-            Because most of this work belongs to professional projects,
-            a large part of my backend experience is
-            <strong>not represented in public GitHub repositories</strong>.
-          </p>
-
-
-          <div class="experience-points">
-
-            <div class="experience-point">
-              <span class="point-marker">&gt;</span>
-              Backend application development
-            </div>
-
-            <div class="experience-point">
-              <span class="point-marker">&gt;</span>
-              REST API design and implementation
-            </div>
-
-            <div class="experience-point">
-              <span class="point-marker">&gt;</span>
-              Business logic and persistence
-            </div>
-
-            <div class="experience-point">
-              <span class="point-marker">&gt;</span>
-              Microservice-based systems
-            </div>
-
-            <div class="experience-point">
-              <span class="point-marker">&gt;</span>
-              Database integration
-            </div>
-
-            <div class="experience-point">
-              <span class="point-marker">&gt;</span>
-              Maintenance and evolution of existing systems
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <!-- =====================================================
-           TECH STACK
-      ====================================================== -->
-
-      <section class="block" id="stack">
-
-        <p class="prompt">
-          C:\USERS\ADRIAN&gt; dir tech-stack\
-        </p>
-
-        <div class="section-heading">
-          <span class="section-number">03.</span>
-          <h2>TECH STACK</h2>
-        </div>
-
-
-        <div class="stack-grid">
-
-          <!-- BACKEND -->
-
-          <article class="stack-card">
-
-            <div class="stack-card-header">
-              <span class="stack-icon">01</span>
-              <h3>BACKEND</h3>
-            </div>
-
-            <div class="skills">
-              <span>JAVA 8</span>
-              <span>JAVA 17</span>
-              <span>JAVA 21</span>
-              <span>SPRING BOOT</span>
-              <span>SPRING FRAMEWORK</span>
-              <span>SPRING DATA JPA</span>
-              <span>HIBERNATE</span>
-              <span>REST API</span>
-              <span>MICROSERVICES</span>
-              <span>SPRING SECURITY</span>
-              <span>JWT</span>
-              <span>MAVEN</span>
-              <span>GRADLE</span>
-            </div>
-
-          </article>
-
-
-          <!-- DATA -->
-
-          <article class="stack-card">
-
-            <div class="stack-card-header">
-              <span class="stack-icon">02</span>
-              <h3>DATA & INFRASTRUCTURE</h3>
-            </div>
-
-            <div class="skills">
-              <span>MYSQL</span>
-              <span>ORACLE</span>
-              <span>SQL</span>
-              <span>KAFKA</span>
-              <span>DOCKER</span>
-            </div>
-
-          </article>
-
-
-          <!-- ANDROID -->
-
-          <article class="stack-card">
-
-            <div class="stack-card-header">
-              <span class="stack-icon">03</span>
-              <h3>ANDROID</h3>
-            </div>
-
-            <div class="skills">
-              <span>KOTLIN</span>
-              <span>ANDROID SDK</span>
-              <span>ANDROID STUDIO</span>
-              <span>FIREBASE</span>
-            </div>
-
-          </article>
-
-
-          <!-- TOOLS -->
-
-          <article class="stack-card">
-
-            <div class="stack-card-header">
-              <span class="stack-icon">04</span>
-              <h3>DEVELOPMENT TOOLS</h3>
-            </div>
-
-            <div class="skills">
-              <span>GIT</span>
-              <span>GITHUB</span>
-              <span>INTELLIJ IDEA</span>
-              <span>ANDROID STUDIO</span>
-              <span>VS CODE</span>
-              <span>POSTMAN</span>
-            </div>
-
-          </article>
-
-        </div>
-
-      </section>
-
-
-      <!-- =====================================================
-           ANDROID DEVELOPMENT
-      ====================================================== -->
-
-      <section class="block" id="android">
-
-        <p class="prompt">
-          C:\USERS\ADRIAN&gt; run android_portfolio.exe
-        </p>
-
-        <div class="section-heading">
-          <span class="section-number">04.</span>
-          <h2>ANDROID DEVELOPMENT</h2>
-        </div>
-
-
-        <div class="android-intro">
-
-          <p>
-            Besides backend development, I independently
-            <strong>design, develop and publish Android applications</strong>.
-          </p>
-
-          <p>
-            Working on my own applications has given me experience beyond
-            coding itself, covering the complete lifecycle of a software product.
-          </p>
-
-        </div>
-
-
-        <div class="android-features">
-
-          <div class="feature">
-            <span>01</span>
-            <p>Product design & feature planning</p>
-          </div>
-
-          <div class="feature">
-            <span>02</span>
-            <p>Native Android development</p>
-          </div>
-
-          <div class="feature">
-            <span>03</span>
-            <p>Android UI development</p>
-          </div>
-
-          <div class="feature">
-            <span>04</span>
-            <p>Local data & application state</p>
-          </div>
-
-          <div class="feature">
-            <span>05</span>
-            <p>Firebase integrations</p>
-          </div>
-
-          <div class="feature">
-            <span>06</span>
-            <p>Advertising & monetization</p>
-          </div>
-
-          <div class="feature">
-            <span>07</span>
-            <p>Localization</p>
-          </div>
-
-          <div class="feature">
-            <span>08</span>
-            <p>Google Play releases & updates</p>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <!-- =====================================================
-           GOOGLE PLAY
-      ====================================================== -->
-
-      <section class="block" id="google-play">
-
-        <p class="prompt">
-          C:\USERS\ADRIAN&gt; open google-play.url
-        </p>
-
-        <div class="section-heading">
-          <span class="section-number">05.</span>
-          <h2>PUBLISHED APPS</h2>
-        </div>
-
-
-        <div class="play-card">
-
-          <div class="play-card-content">
-
-            <span class="play-label">
-              AVAILABLE ON GOOGLE PLAY
-            </span>
-
-            <h3>Android Apps</h3>
-
-            <p>
-              My personal projects mainly focus on Android development,
-              and several of my applications are publicly available
-              through my Google Play developer profile.
+            <p class="hero-role">
+                Java · Spring Boot · Microservices
             </p>
 
-            <div class="featured-app">
 
-              <span class="featured-prefix">
-                RECENT PROJECT
-              </span>
+            <p class="hero-description">
+                I build backend applications,
+                <strong>REST APIs and microservices</strong>
+                with Java and Spring Boot.
+                I also create and publish native Android applications
+                with Kotlin and Jetpack Compose.
+            </p>
 
-              <h4>Quiet Circuit: Idle Network</h4>
 
-              <p>
-                An incremental Android game built around network progression,
-                upgrades, persistent systems and offline progression.
-              </p>
+            <div class="hero-actions">
+
+                <a
+                    class="button button-primary"
+                    href="https://www.linkedin.com/in/adrianprzcobo/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                    <span>↗</span>
+                </a>
+
+
+                <a
+                    class="button"
+                    href="https://github.com/adrianprzcb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                    <span>↗</span>
+                </a>
+
+
+                <a
+                    class="button"
+                    href="https://play.google.com/store/apps/dev?id=8977782208284151312"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Google Play
+                    <span>↗</span>
+                </a>
 
             </div>
 
-          </div>
 
+            <div class="hero-tech">
 
-          <div class="play-card-action">
+                <span>JAVA 8 / 17 / 21</span>
 
-            <a
-              class="retro-button primary-button"
-              href="https://play.google.com/store/apps/dev?id=8977782208284151312"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              VIEW MY APPS
-              <span>&gt;</span>
-            </a>
+                <span>SPRING BOOT</span>
 
-            <span class="external-note">
-              play.google.com
-            </span>
+                <span>KAFKA</span>
 
-          </div>
+                <span>REST APIs</span>
 
-        </div>
+                <span>ANDROID</span>
 
-      </section>
-
-
-      <!-- =====================================================
-           WHAT I WORK WITH
-      ====================================================== -->
-
-      <section class="block" id="work">
-
-        <p class="prompt">
-          C:\USERS\ADRIAN&gt; type capabilities.txt
-        </p>
-
-        <div class="section-heading">
-          <span class="section-number">06.</span>
-          <h2>WHAT I WORK WITH</h2>
-        </div>
-
-
-        <div class="capabilities-grid">
-
-          <article class="capability">
-
-            <span class="capability-number">[01]</span>
-
-            <h3>BACKEND ENGINEERING</h3>
-
-            <ul>
-              <li>REST APIs</li>
-              <li>Microservices</li>
-              <li>Business logic</li>
-              <li>Database persistence</li>
-              <li>Distributed components</li>
-            </ul>
-
-          </article>
-
-
-          <article class="capability">
-
-            <span class="capability-number">[02]</span>
-
-            <h3>ANDROID DEVELOPMENT</h3>
-
-            <ul>
-              <li>Native Android apps</li>
-              <li>Kotlin applications</li>
-              <li>Mobile UI/UX</li>
-              <li>Published products</li>
-              <li>Independent projects</li>
-            </ul>
-
-          </article>
-
-
-          <article class="capability">
-
-            <span class="capability-number">[03]</span>
-
-            <h3>SOFTWARE ENGINEERING</h3>
-
-            <ul>
-              <li>Clean architecture</li>
-              <li>Maintainable code</li>
-              <li>API design</li>
-              <li>Data modelling</li>
-              <li>Testing & debugging</li>
-            </ul>
-
-          </article>
-
-        </div>
-
-      </section>
-
-
-      <!-- =====================================================
-           CURRENT FOCUS
-      ====================================================== -->
-
-      <section class="block" id="focus">
-
-        <p class="prompt">
-          C:\USERS\ADRIAN&gt; tree current-focus\
-        </p>
-
-        <div class="section-heading">
-          <span class="section-number">07.</span>
-          <h2>CURRENT FOCUS</h2>
-        </div>
-
-
-        <div class="focus-grid">
-
-          <div class="focus-terminal">
-
-            <div class="focus-title">
-              BACKEND ENGINEERING
             </div>
 
-            <pre>├── Java
-├── Spring Boot
-├── REST API Design
-├── Microservices
-├── Persistence / JPA / Hibernate
-├── Security
-└── Distributed Systems</pre>
-
-          </div>
+        </section>
 
 
-          <div class="focus-terminal">
 
-            <div class="focus-title">
-              ANDROID
+        <!-- =================================================
+             ABOUT / WHAT I DO
+        ================================================== -->
+
+        <section
+            class="section"
+            id="about"
+        >
+
+            <div class="section-label">
+                <span>01</span>
+                What I do
             </div>
 
-            <pre>├── Kotlin
-├── Native Android Development
-├── Product Development
-├── Application Architecture
-└── Google Play Publishing</pre>
 
-          </div>
-
-        </div>
-
-      </section>
+            <div class="work-grid">
 
 
-      <!-- =====================================================
-           PROJECTS / GITHUB EXPLANATION
-      ====================================================== -->
+                <!-- BACKEND -->
 
-      <section class="block" id="projects">
+                <article class="work-item">
 
-        <p class="prompt">
-          C:\USERS\ADRIAN&gt; dir projects\
-        </p>
+                    <div class="work-heading">
 
-        <div class="section-heading">
-          <span class="section-number">08.</span>
-          <h2>PROJECTS & EXPERIENCE</h2>
-        </div>
+                        <span class="terminal-mark">
+                            &gt;_
+                        </span>
 
+                        <h2>
+                            Backend Development
+                        </h2>
 
-        <div class="projects-message">
-
-          <div class="terminal-message-header">
-            BACKEND_PROJECTS.INFO
-          </div>
-
-          <p>
-            Most of my <strong>Java and Spring Boot experience comes from
-            professional work for companies</strong>.
-          </p>
-
-          <p>
-            Because of this, much of my backend work cannot be shown
-            publicly on GitHub.
-          </p>
-
-          <p>
-            My personal development work is focused mainly on
-            <strong>Android applications</strong>, several of which are
-            publicly available on Google Play.
-          </p>
+                    </div>
 
 
-          <div class="project-actions">
-
-            <a
-              class="retro-button"
-              href="https://github.com/adrianprzcb"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              VIEW GITHUB &gt;
-            </a>
-
-            <a
-              class="retro-button"
-              href="https://play.google.com/store/apps/dev?id=8977782208284151312"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              VIEW GOOGLE PLAY &gt;
-            </a>
-
-          </div>
-
-        </div>
-
-      </section>
+                    <p>
+                        My main professional focus is backend development
+                        with <strong>Java and Spring Boot</strong>.
+                    </p>
 
 
-      <!-- =====================================================
-           CONTACT
-      ====================================================== -->
-
-      <section class="block contact-section" id="contact">
-
-        <p class="prompt">
-          C:\USERS\ADRIAN&gt; contact
-        </p>
-
-        <div class="section-heading">
-          <span class="section-number">09.</span>
-          <h2>LET'S CONNECT</h2>
-        </div>
+                    <p>
+                        I work on REST APIs, microservices, business logic,
+                        database persistence and service integration,
+                        including asynchronous communication with
+                        <strong>Apache Kafka</strong>.
+                    </p>
 
 
-        <p class="contact-intro">
-          Interested in Java, Spring Boot, backend engineering,
-          Android development or software in general?
-        </p>
+                    <div class="inline-stack">
+
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>REST</span>
+                        <span>Microservices</span>
+                        <span>Kafka</span>
+                        <span>Redis</span>
+                        <span>SQL</span>
+
+                    </div>
+
+                </article>
 
 
-        <div class="contact-grid">
 
-          <a
-            class="contact-item"
-            href="https://www.linkedin.com/in/adrianprzcobo/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+                <!-- ANDROID -->
 
-            <span class="contact-label">
-              LINKEDIN
-            </span>
+                <article class="work-item">
 
-            <span class="contact-value">
-              linkedin.com/in/adrianprzcobo
-            </span>
+                    <div class="work-heading">
 
-            <span class="contact-arrow">
-              &gt;
-            </span>
+                        <span class="terminal-mark">
+                            &gt;_
+                        </span>
 
-          </a>
+                        <h2>
+                            Android Development
+                        </h2>
+
+                    </div>
 
 
-          <a
-            class="contact-item"
-            href="https://github.com/adrianprzcb"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-
-            <span class="contact-label">
-              GITHUB
-            </span>
-
-            <span class="contact-value">
-              github.com/adrianprzcb
-            </span>
-
-            <span class="contact-arrow">
-              &gt;
-            </span>
-
-          </a>
+                    <p>
+                        Alongside backend development, I build native Android
+                        applications using
+                        <strong>Kotlin and Jetpack Compose</strong>.
+                    </p>
 
 
-          <a
-            class="contact-item"
-            href="https://play.google.com/store/apps/dev?id=8977782208284151312"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-
-            <span class="contact-label">
-              GOOGLE PLAY
-            </span>
-
-            <span class="contact-value">
-              Android Developer Profile
-            </span>
-
-            <span class="contact-arrow">
-              &gt;
-            </span>
-
-          </a>
-
-        </div>
-
-      </section>
+                    <p>
+                        I have developed more than 10 apps, several of them
+                        published on Google Play, taking projects from the
+                        initial idea through development and release.
+                    </p>
 
 
-      <!-- =====================================================
-           FOOTER
-      ====================================================== -->
+                    <div class="inline-stack">
 
-      <footer>
+                        <span>Kotlin</span>
+                        <span>Jetpack Compose</span>
+                        <span>Android</span>
+                        <span>Google Play</span>
 
-        <div class="footer-left">
-          <span>© <span id="year"></span> ADRIÁN PÉREZ COBO</span>
-          <span class="footer-stack">
-            JAVA · SPRING BOOT · BACKEND · KOTLIN · ANDROID
-          </span>
-        </div>
+                    </div>
 
-        <div class="footer-right">
-          <span class="footer-status">SYSTEM ONLINE</span>
-          <span id="clock">00:00:00</span>
-        </div>
+                </article>
 
-      </footer>
+            </div>
 
-    </section>
+        </section>
 
-  </main>
 
-  <script src="script.js"></script>
+
+        <!-- =================================================
+             EXPERIENCE
+        ================================================== -->
+
+        <section
+            class="section"
+            id="experience"
+        >
+
+            <div class="section-label">
+                <span>02</span>
+                Experience
+            </div>
+
+
+            <div class="experience-list">
+
+
+                <!-- ICONSULTING -->
+
+                <article class="experience">
+
+                    <div class="experience-meta">
+
+                        <span class="experience-date">
+                            2025 — 2026
+                        </span>
+
+                        <span class="experience-company">
+                            Iconsulting365
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-content">
+
+                        <h2>
+                            Backend Developer
+                        </h2>
+
+
+                        <p>
+                            Development and maintenance of backend applications
+                            with Java and Spring Boot. REST APIs, microservices,
+                            business logic, database access and communication
+                            between services using Apache Kafka.
+                        </p>
+
+
+                        <div class="experience-tech">
+
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Microservices</span>
+                            <span>Kafka</span>
+                            <span>Oracle</span>
+                            <span>SQL</span>
+                            <span>Swagger</span>
+                            <span>Postman</span>
+                            <span>Git</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- SOLTEL -->
+
+                <article class="experience">
+
+                    <div class="experience-meta">
+
+                        <span class="experience-date">
+                            2023 — 2024
+                        </span>
+
+                        <span class="experience-company">
+                            SOLTEL Group
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-content">
+
+                        <h2>
+                            Backend Developer
+                        </h2>
+
+
+                        <p>
+                            Development and maintenance of backend applications
+                            using Java and Spring, working with REST APIs,
+                            microservices, SQL, service testing and API
+                            documentation.
+                        </p>
+
+
+                        <div class="experience-tech">
+
+                            <span>Java</span>
+                            <span>Spring</span>
+                            <span>REST APIs</span>
+                            <span>Microservices</span>
+                            <span>SQL</span>
+                            <span>Postman</span>
+                            <span>Swagger</span>
+                            <span>Git</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TECH STACK
+        ================================================== -->
+
+        <section
+            class="section"
+            id="stack"
+        >
+
+            <div class="section-label">
+                <span>03</span>
+                Technologies
+            </div>
+
+
+            <div class="stack-layout">
+
+
+                <div class="stack-group">
+
+                    <span class="stack-title">
+                        Backend
+                    </span>
+
+                    <div class="stack-items">
+
+                        <span>Java 8 / 17 / 21</span>
+                        <span>Spring Boot</span>
+                        <span>Spring Framework</span>
+                        <span>REST APIs</span>
+                        <span>Microservices</span>
+                        <span>Spring Data JPA</span>
+                        <span>Hibernate</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stack-group">
+
+                    <span class="stack-title">
+                        Data & Integration
+                    </span>
+
+                    <div class="stack-items">
+
+                        <span>SQL</span>
+                        <span>Oracle</span>
+                        <span>Apache Kafka</span>
+                        <span>Redis</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stack-group">
+
+                    <span class="stack-title">
+                        Development
+                    </span>
+
+                    <div class="stack-items">
+
+                        <span>Git</span>
+                        <span>Docker</span>
+                        <span>Maven</span>
+                        <span>Gradle</span>
+                        <span>Postman</span>
+                        <span>Swagger / OpenAPI</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stack-group">
+
+                    <span class="stack-title">
+                        Android
+                    </span>
+
+                    <div class="stack-items">
+
+                        <span>Kotlin</span>
+                        <span>Jetpack Compose</span>
+                        <span>Android Studio</span>
+                        <span>Google Play</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             LINKS / CONTACT
+        ================================================== -->
+
+        <section class="connect">
+
+            <div>
+
+                <span class="connect-prefix">
+                    &gt; connect
+                </span>
+
+                <h2>
+                    Find me online.
+                </h2>
+
+            </div>
+
+
+            <div class="social-links">
+
+
+                <a
+                    href="https://www.linkedin.com/in/adrianprzcobo/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>
+                        LinkedIn
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+                </a>
+
+
+                <a
+                    href="https://github.com/adrianprzcb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>
+                        GitHub
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+                </a>
+
+
+                <a
+                    href="https://play.google.com/store/apps/dev?id=8977782208284151312"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>
+                        Google Play
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <span>
+            © <span id="year"></span> Adrián Pérez Cobo
+        </span>
+
+        <span class="footer-code">
+            backend.java
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

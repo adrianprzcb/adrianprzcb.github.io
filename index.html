@@ -1,610 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Adrián Pérez Cobo — Backend Developer specialized in Java, Spring Boot, REST APIs and microservices. Android developer with Kotlin and Jetpack Compose."
-    >
-
-    <meta
-        name="keywords"
-        content="Adrián Pérez Cobo, Backend Developer, Java, Spring Boot, REST APIs, Microservices, Kafka, Android, Kotlin, Jetpack Compose"
-    >
-
-    <meta
-        name="author"
-        content="Adrián Pérez Cobo"
-    >
-
-    <title>Adrián Pérez Cobo | Backend Developer</title>
-
-    <link
-        rel="stylesheet"
-        href="styles.css"
-    >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Adrián Pérez Cobo — Backend and Android developer building reliable services and useful mobile apps.">
+    <meta name="theme-color" content="#f5f0e8">
+    <title>Adrián Pérez Cobo — Developer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-
-<body>
-
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
-
+<body data-title-en="Adrián Pérez Cobo — Developer" data-title-es="Adrián Pérez Cobo — Desarrollador">
     <header class="site-header">
+        <a class="logo" href="#top" aria-label="Adrián Pérez Cobo, home">APC<span>.</span></a>
 
-        <a
-            class="logo"
-            href="#top"
-            aria-label="Go to top"
-        >
-            AP<span>.</span>
-        </a>
-
-
-        <nav class="navigation">
-
-            <a href="#about">
-                About
-            </a>
-
-            <a href="#experience">
-                Experience
-            </a>
-
-            <a href="#stack">
-                Stack
-            </a>
-
+        <nav class="navigation" aria-label="Primary navigation">
+            <a href="#profile" data-en="Profile" data-es="Perfil">Profile</a>
+            <a href="#stack" data-en="Stack" data-es="Tecnologías">Stack</a>
+            <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
         </nav>
 
-
-        <a
-            class="header-link"
-            href="cv.pdf"
-            target="_blank"
-        >
-            CV ↗
-        </a>
-
+        <div class="header-actions">
+            <div class="language-switch" role="group" aria-label="Language">
+                <button class="language-button active" type="button" data-language="en" aria-pressed="true">EN</button>
+                <button class="language-button" type="button" data-language="es" aria-pressed="false">ES</button>
+            </div>
+        </div>
     </header>
 
-
-    <!-- =====================================================
-         MAIN
-    ====================================================== -->
-
     <main id="top">
+        <section class="hero" id="profile" aria-labelledby="hero-title">
+            <p class="hero-kicker hero-name"><span></span><span>Adrián Pérez Cobo</span></p>
 
+            <div class="hero-layout">
+                <div>
+                    <h1 id="hero-title">
+                        <span data-en="Backend Developer" data-es="Desarrollador Backend">Backend Developer</span>
+                        <em>Java &amp; Spring Boot</em>
+                    </h1>
+                </div>
 
-        <!-- =================================================
-             HERO
-        ================================================== -->
-
-        <section class="hero">
-
-            <div class="hero-status">
-                <span class="status-dot"></span>
-                Backend Developer
-            </div>
-
-
-            <h1>
-                Adrián Pérez Cobo
-            </h1>
-
-
-            <p class="hero-role">
-                Java · Spring Boot · Microservices
-            </p>
-
-
-            <p class="hero-description">
-                I build backend applications,
-                <strong>REST APIs and microservices</strong>
-                with Java and Spring Boot.
-                I also create and publish native Android applications
-                with Kotlin and Jetpack Compose.
-            </p>
-
-
-            <div class="hero-actions">
-
-                <a
-                    class="button button-primary"
-                    href="https://www.linkedin.com/in/adrianprzcobo/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                    <span>↗</span>
-                </a>
-
-
-                <a
-                    class="button"
-                    href="https://github.com/adrianprzcb"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                    <span>↗</span>
-                </a>
-
-
-                <a
-                    class="button"
-                    href="https://play.google.com/store/apps/dev?id=8977782208284151312"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Google Play
-                    <span>↗</span>
-                </a>
-
-            </div>
-
-
-            <div class="hero-tech">
-
-                <span>JAVA 8 / 17 / 21</span>
-
-                <span>SPRING BOOT</span>
-
-                <span>KAFKA</span>
-
-                <span>REST APIs</span>
-
-                <span>ANDROID</span>
-
+                <div class="hero-intro">
+                    <p data-en="Backend developer with professional experience in Java, Spring Boot, REST APIs, microservices, SQL, Kafka, and Redis. I also develop Android apps with Kotlin and Jetpack Compose." data-es="Desarrollador Backend con experiencia profesional en Java, Spring Boot, APIs REST, microservicios, SQL, Kafka y Redis. También desarrollo apps Android con Kotlin y Jetpack Compose.">Backend developer with professional experience in Java, Spring Boot, REST APIs, microservices, SQL, Kafka, and Redis. I also develop Android apps with Kotlin and Jetpack Compose.</p>
+                    <div class="hero-actions">
+                        <a class="button button-dark" href="https://www.linkedin.com/in/adrianprzcobo/" target="_blank" rel="noopener noreferrer">
+                            <span>LinkedIn</span><span aria-hidden="true">↗</span>
+                        </a>
+                        <a class="button button-link" href="cv.pdf" download>
+                            <span data-en="Download CV (Spanish)" data-es="Descargar CV">Download CV (Spanish)</span><span aria-hidden="true">↓</span>
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </section>
 
+        <section class="section stack" id="stack" aria-labelledby="stack-title">
+            <div class="section-number">01 /</div>
+            <div class="section-content">
+                <p class="eyebrow" data-en="Technologies" data-es="Tecnologías">Technologies</p>
+                <h2 id="stack-title">Stack</h2>
 
+                <div class="stack-grid">
+                    <article>
+                        <span>01</span>
+                        <h3>Backend</h3>
+                        <p>Java 8 / 17 / 21 · Spring Boot · Spring Framework · REST APIs · Microservices · Spring Data JPA · Hibernate · SQL · Oracle · Apache Kafka · Redis · Maven · Docker · Postman · OpenAPI</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h3>Android</h3>
+                        <p>Kotlin · Jetpack Compose · Android SDK · Android Studio · Firebase · AdMob · Gradle · Google Play</p>
+                    </article>
+                </div>
 
-        <!-- =================================================
-             ABOUT / WHAT I DO
-        ================================================== -->
-
-        <section
-            class="section"
-            id="about"
-        >
-
-            <div class="section-label">
-                <span>01</span>
-                What I do
+                <p class="stack-note" data-en="I also have experience with other technologies and I am always willing to learn new tools when a project requires them." data-es="También tengo conocimientos en otras tecnologías y siempre estoy dispuesto a aprender nuevas herramientas cuando un proyecto lo requiere.">I also have experience with other technologies and I am always willing to learn new tools when a project requires them.</p>
             </div>
-
-
-            <div class="work-grid">
-
-
-                <!-- BACKEND -->
-
-                <article class="work-item">
-
-                    <div class="work-heading">
-
-                        <span class="terminal-mark">
-                            &gt;_
-                        </span>
-
-                        <h2>
-                            Backend Development
-                        </h2>
-
-                    </div>
-
-
-                    <p>
-                        My main professional focus is backend development
-                        with <strong>Java and Spring Boot</strong>.
-                    </p>
-
-
-                    <p>
-                        I work on REST APIs, microservices, business logic,
-                        database persistence and service integration,
-                        including asynchronous communication with
-                        <strong>Apache Kafka</strong>.
-                    </p>
-
-
-                    <div class="inline-stack">
-
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>REST</span>
-                        <span>Microservices</span>
-                        <span>Kafka</span>
-                        <span>Redis</span>
-                        <span>SQL</span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ANDROID -->
-
-                <article class="work-item">
-
-                    <div class="work-heading">
-
-                        <span class="terminal-mark">
-                            &gt;_
-                        </span>
-
-                        <h2>
-                            Android Development
-                        </h2>
-
-                    </div>
-
-
-                    <p>
-                        Alongside backend development, I build native Android
-                        applications using
-                        <strong>Kotlin and Jetpack Compose</strong>.
-                    </p>
-
-
-                    <p>
-                        I have developed more than 10 apps, several of them
-                        published on Google Play, taking projects from the
-                        initial idea through development and release.
-                    </p>
-
-
-                    <div class="inline-stack">
-
-                        <span>Kotlin</span>
-                        <span>Jetpack Compose</span>
-                        <span>Android</span>
-                        <span>Google Play</span>
-
-                    </div>
-
-                </article>
-
-            </div>
-
         </section>
 
-
-
-        <!-- =================================================
-             EXPERIENCE
-        ================================================== -->
-
-        <section
-            class="section"
-            id="experience"
-        >
-
-            <div class="section-label">
-                <span>02</span>
-                Experience
-            </div>
-
-
-            <div class="experience-list">
-
-
-                <!-- ICONSULTING -->
-
-                <article class="experience">
-
-                    <div class="experience-meta">
-
-                        <span class="experience-date">
-                            2025 — 2026
-                        </span>
-
-                        <span class="experience-company">
-                            Iconsulting365
-                        </span>
-
+        <section class="section projects" id="projects" aria-labelledby="projects-title">
+            <div class="section-number">02 /</div>
+            <div class="section-content">
+                <div class="projects-heading">
+                    <div>
+                        <p class="eyebrow" data-en="Personal work" data-es="Trabajo personal">Personal work</p>
+                        <h2 id="projects-title" data-en="Projects" data-es="Proyectos">Projects</h2>
                     </div>
+                </div>
 
+                <div class="projects-intro">
+                    <p data-en="My GitHub contains some public projects, although most of my professional work is private. I will gradually add more personal projects to this website." data-es="En mi GitHub hay algunos proyectos públicos, aunque la mayoría de mi trabajo profesional es privado. En esta web iré añadiendo poco a poco más proyectos personales.">My GitHub contains some public projects, although most of my professional work is private. I will gradually add more personal projects to this website.</p>
+                    <a class="button button-dark" href="https://github.com/adrianprzcb" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                </div>
 
-                    <div class="experience-content">
-
-                        <h2>
-                            Backend Developer
-                        </h2>
-
-
-                        <p>
-                            Development and maintenance of backend applications
-                            with Java and Spring Boot. REST APIs, microservices,
-                            business logic, database access and communication
-                            between services using Apache Kafka.
-                        </p>
-
-
-                        <div class="experience-tech">
-
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>Microservices</span>
-                            <span>Kafka</span>
-                            <span>Oracle</span>
-                            <span>SQL</span>
-                            <span>Swagger</span>
-                            <span>Postman</span>
-                            <span>Git</span>
-
+                <article class="project-card">
+                    <div class="project-art apps-art" aria-hidden="true"><span>▣</span></div>
+                    <div class="project-info">
+                        <p class="project-type">ANDROID · GOOGLE PLAY</p>
+                        <h3 data-en="Android apps" data-es="Apps Android">Android apps</h3>
+                        <p data-en="Android apps developed with Kotlin and published on Google Play." data-es="Apps Android desarrolladas con Kotlin y publicadas en Google Play.">Android apps developed with Kotlin and published on Google Play.</p>
+                        <div class="project-links">
+                            <a href="projects/android-apps/"><span data-en="View Android apps" data-es="Ver apps Android">View Android apps</span> <span aria-hidden="true">→</span></a>
+                            <a href="https://play.google.com/store/apps/dev?id=8977782208284151312" target="_blank" rel="noopener noreferrer"><span data-en="Google Play profile" data-es="Perfil de Google Play">Google Play profile</span> <span aria-hidden="true">↗</span></a>
                         </div>
-
                     </div>
-
                 </article>
-
-
-
-                <!-- SOLTEL -->
-
-                <article class="experience">
-
-                    <div class="experience-meta">
-
-                        <span class="experience-date">
-                            2023 — 2024
-                        </span>
-
-                        <span class="experience-company">
-                            SOLTEL Group
-                        </span>
-
-                    </div>
-
-
-                    <div class="experience-content">
-
-                        <h2>
-                            Backend Developer
-                        </h2>
-
-
-                        <p>
-                            Development and maintenance of backend applications
-                            using Java and Spring, working with REST APIs,
-                            microservices, SQL, service testing and API
-                            documentation.
-                        </p>
-
-
-                        <div class="experience-tech">
-
-                            <span>Java</span>
-                            <span>Spring</span>
-                            <span>REST APIs</span>
-                            <span>Microservices</span>
-                            <span>SQL</span>
-                            <span>Postman</span>
-                            <span>Swagger</span>
-                            <span>Git</span>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
             </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             TECH STACK
-        ================================================== -->
-
-        <section
-            class="section"
-            id="stack"
-        >
-
-            <div class="section-label">
-                <span>03</span>
-                Technologies
-            </div>
-
-
-            <div class="stack-layout">
-
-
-                <div class="stack-group">
-
-                    <span class="stack-title">
-                        Backend
-                    </span>
-
-                    <div class="stack-items">
-
-                        <span>Java 8 / 17 / 21</span>
-                        <span>Spring Boot</span>
-                        <span>Spring Framework</span>
-                        <span>REST APIs</span>
-                        <span>Microservices</span>
-                        <span>Spring Data JPA</span>
-                        <span>Hibernate</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="stack-group">
-
-                    <span class="stack-title">
-                        Data & Integration
-                    </span>
-
-                    <div class="stack-items">
-
-                        <span>SQL</span>
-                        <span>Oracle</span>
-                        <span>Apache Kafka</span>
-                        <span>Redis</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="stack-group">
-
-                    <span class="stack-title">
-                        Development
-                    </span>
-
-                    <div class="stack-items">
-
-                        <span>Git</span>
-                        <span>Docker</span>
-                        <span>Maven</span>
-                        <span>Gradle</span>
-                        <span>Postman</span>
-                        <span>Swagger / OpenAPI</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="stack-group">
-
-                    <span class="stack-title">
-                        Android
-                    </span>
-
-                    <div class="stack-items">
-
-                        <span>Kotlin</span>
-                        <span>Jetpack Compose</span>
-                        <span>Android Studio</span>
-                        <span>Google Play</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             LINKS / CONTACT
-        ================================================== -->
-
-        <section class="connect">
-
-            <div>
-
-                <span class="connect-prefix">
-                    &gt; connect
-                </span>
-
-                <h2>
-                    Find me online.
-                </h2>
-
-            </div>
-
-
-            <div class="social-links">
-
-
-                <a
-                    href="https://www.linkedin.com/in/adrianprzcobo/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>
-                        LinkedIn
-                    </span>
-
-                    <span>
-                        ↗
-                    </span>
-                </a>
-
-
-                <a
-                    href="https://github.com/adrianprzcb"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>
-                        GitHub
-                    </span>
-
-                    <span>
-                        ↗
-                    </span>
-                </a>
-
-
-                <a
-                    href="https://play.google.com/store/apps/dev?id=8977782208284151312"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>
-                        Google Play
-                    </span>
-
-                    <span>
-                        ↗
-                    </span>
-                </a>
-
-            </div>
-
         </section>
 
     </main>
 
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
     <footer>
-
-        <span>
-            © <span id="year"></span> Adrián Pérez Cobo
-        </span>
-
-        <span class="footer-code">
-            backend.java
-        </span>
-
+        <a class="logo" href="#top" aria-label="Back to top">APC<span>.</span></a>
+        <span>© <span id="year"></span> Adrián Pérez Cobo</span>
+        <div class="footer-links">
+            <a href="https://github.com/adrianprzcb" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/adrianprzcobo/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://play.google.com/store/apps/dev?id=8977782208284151312" target="_blank" rel="noopener noreferrer">Google Play ↗</a>
+        </div>
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
-
 </html>

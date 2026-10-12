@@ -12,17 +12,21 @@ function setCurrentYear() {
 function enableLanguageSwitch() {
     const buttons = document.querySelectorAll("[data-language]");
     const translatedElements = document.querySelectorAll("[data-en][data-es]");
-    let savedLanguage = "en";
+    const translatedLabels = document.querySelectorAll("[data-aria-en][data-aria-es]");
+    let savedLanguage = "es";
 
-    try { savedLanguage = localStorage.getItem("portfolio-language") || "en"; }
+    try { savedLanguage = localStorage.getItem("portfolio-language") || "es"; }
     catch (_) { /* The page works when storage is unavailable. */ }
 
     const setLanguage = (language) => {
-        const selectedLanguage = language === "es" ? "es" : "en";
+        const selectedLanguage = language === "en" ? "en" : "es";
         document.documentElement.lang = selectedLanguage;
         document.title = document.body.dataset[selectedLanguage === "es" ? "titleEs" : "titleEn"] || document.title;
 
         translatedElements.forEach((element) => { element.textContent = element.dataset[selectedLanguage]; });
+        translatedLabels.forEach((element) => {
+            element.setAttribute("aria-label", element.dataset[selectedLanguage === "es" ? "ariaEs" : "ariaEn"]);
+        });
         buttons.forEach((button) => {
             const isActive = button.dataset.language === selectedLanguage;
             button.classList.toggle("active", isActive);

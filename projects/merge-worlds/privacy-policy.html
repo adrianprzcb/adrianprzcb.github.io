@@ -3,133 +3,168 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for Merge Worlds, an Android game using Firebase and Google AdMob.">
+  <meta name="description" content="Privacy Policy for Merge Worlds: local progress, Firebase Analytics, Crashlytics, AdMob, and optional Google Play Games backups.">
   <meta name="theme-color" content="#10151b">
   <title>Privacy Policy — Merge Worlds</title>
   <link rel="icon" type="image/png" href="merge-worlds-icon.png">
-  <style>
-    :root { color-scheme: dark; --bg: #10151b; --surface: #171e26; --text: #f1f3f5; --muted: #b8c1cb; --line: #303b48; --accent: #ffd273; }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
-    body { margin: 0; color: var(--text); background: var(--bg); font: 400 1rem/1.75 Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
-    a { color: var(--accent); text-underline-offset: 4px; overflow-wrap: anywhere; }
-    a:hover { color: #ffe8b5; }
-    :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
-    .topbar, main, .footer { width: min(800px, calc(100% - 40px)); margin-inline: auto; }
-    .topbar { display: flex; align-items: center; gap: 14px; padding-block: 26px; border-bottom: 1px solid var(--line); }
-    .topbar img { width: 56px; height: 56px; object-fit: contain; }
-    .brand { margin: 0; font-size: 1.25rem; font-weight: 700; line-height: 1.3; }
-    .brand-caption { margin: 4px 0 0; color: var(--muted); font-size: .85rem; line-height: 1.4; }
-    main { padding-block: 42px 24px; }
-    h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.15; letter-spacing: -.04em; }
-    .updated { margin: 0 0 28px; color: var(--muted); font-size: .9rem; }
-    .notice { margin-bottom: 28px; padding: 18px 22px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; }
-    .notice p { margin: 0; }
-    .notice strong { display: block; margin-bottom: 5px; color: var(--accent); font-size: .9rem; }
-    p, li { color: var(--muted); }
-    strong { color: var(--text); }
-    p { margin: 0 0 16px; }
-    h2 { margin: 32px 0 14px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 1.2rem; line-height: 1.4; letter-spacing: -.015em; }
-    ul { margin: 0 0 18px; padding-left: 22px; }
-    li { margin-block: 7px; }
-    .contact { padding: 20px 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
-    .contact p:last-child { margin: 0; }
-    .footer { padding-block: 18px 32px; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
-    @media (max-width: 480px) {
-      .topbar, main, .footer { width: calc(100% - 32px); }
-      .topbar { padding-block: 20px; }
-      main { padding-top: 30px; }
-      .notice, .contact { padding: 16px; }
-    }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  </style>
+  <link rel="stylesheet" href="styles.css?v=20261022-1">
 </head>
 <body>
   <header class="topbar">
-    <img src="merge-worlds-icon.png" alt="" width="56" height="56">
-    <div>
-      <p class="brand">Merge Worlds</p>
-      <p class="brand-caption">Privacy &amp; data</p>
-    </div>
-  </header>
-
-  <main>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: <time datetime="2026-10-21">October 21, 2026</time></p>
-
-    <aside class="notice" aria-label="Development status">
-      <strong>In development</strong>
-      <p>Merge Worlds has not yet been publicly released. This initial policy describes the game's planned use of Firebase and Google AdMob. We will update it as the game's features and data practices are finalized.</p>
-    </aside>
-
-    <p>This Privacy Policy explains how <strong>Merge Worlds</strong> (the “Game”), provided by <strong>RUSHERS ADR</strong> (“we,” “us,” or “our”), handles information when you use it, including any testing versions.</p>
-    <p>For privacy questions or requests, contact <a href="mailto:rushersadr@gmail.com">rushersadr@gmail.com</a>.</p>
-
-    <section aria-labelledby="information-title">
-      <h2 id="information-title">1. Information we process</h2>
-      <p>Depending on the features enabled, your device settings, and your privacy choices, the Game and its service providers may process:</p>
-      <ul>
-        <li><strong>Device and app information:</strong> device model, operating system, app version, language, and app-instance or device identifiers.</li>
-        <li><strong>Usage and technical information:</strong> game interactions, sessions, performance information, and diagnostic logs, where the corresponding services are enabled.</li>
-        <li><strong>Advertising information:</strong> IP address, approximate location inferred from it, advertising identifiers where available, ad impressions, and ad interactions.</li>
-        <li><strong>Support communications:</strong> your email address and any information you choose to send when contacting us.</li>
-      </ul>
-      <p>Game progress and preferences may also be stored on your device to support gameplay. The exact information processed will depend on the features included in the version you use.</p>
-    </section>
-
-    <section aria-labelledby="firebase-title">
-      <h2 id="firebase-title">2. Firebase</h2>
-      <p>The Game uses <strong>Google Firebase</strong> to support its operation and improvement. Depending on the Firebase services enabled, Google may process app identifiers, device information, usage events, or technical diagnostics to help operate features, understand usage, and resolve issues.</p>
-      <p>The information collected depends on the particular Firebase services and their configuration. More information is available in <a href="https://firebase.google.com/support/privacy">Firebase's privacy and security documentation</a>.</p>
-    </section>
-
-    <section aria-labelledby="advertising-title">
-      <h2 id="advertising-title">3. Google AdMob</h2>
-      <p>The Game uses <strong>Google AdMob</strong> to serve advertisements. Google and its advertising partners may process device or advertising identifiers, IP addresses, ad interactions, and diagnostic information to deliver and measure ads and prevent fraud.</p>
-      <p>Ad personalization and data processing depend on your region, consent choices, device settings, and the advertising configuration. Where consent is required by applicable law, processing that relies on consent is subject to that choice.</p>
-      <p>You can manage available advertising privacy controls through your Android or Google account settings. Learn more about <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-    </section>
-
-    <section aria-labelledby="purposes-title">
-      <h2 id="purposes-title">4. How information is used and shared</h2>
-      <p>Information is used to operate and improve the Game, understand usage, maintain stability and security, provide and measure advertising, respond to requests, and meet legal obligations.</p>
-      <p>Google and its service partners may process information for the Firebase and AdMob services described above. Information may also be disclosed when required by law or reasonably necessary to protect users, prevent abuse, or defend legal rights.</p>
-      <p>Where a legal basis is required, processing may rely on providing the service you request, consent for optional processing where required, legitimate interests in operating and securing the Game, or legal obligations, as applicable.</p>
-    </section>
-
-    <section aria-labelledby="retention-title">
-      <h2 id="retention-title">5. Storage, retention, and security</h2>
-      <p>Information is retained only as long as needed for its purpose, subject to legal requirements and the retention settings and policies of the relevant service provider. Google may process information in countries other than your own, using the safeguards described in its privacy documentation.</p>
-      <p>Clearing app storage or uninstalling the Game can remove locally stored information. It does not necessarily remove information held by Google or included in device backups.</p>
-      <p>We use reasonable safeguards to protect information, but no method of electronic storage or transmission can be guaranteed to be completely secure.</p>
-    </section>
-
-    <section aria-labelledby="rights-title">
-      <h2 id="rights-title">6. Your choices and rights</h2>
-      <p>Depending on where you live, you may have rights to access, correct, delete, or obtain a copy of your personal information; restrict or object to certain processing; withdraw consent; or complain to a data-protection authority.</p>
-      <p>To make a request concerning information under our control, email <a href="mailto:rushersadr@gmail.com?subject=Merge%20Worlds%20Privacy%20Request">rushersadr@gmail.com</a>. We may need additional information to verify and handle your request. For information held directly by Google, you may also need to use Google's privacy controls or contact Google.</p>
-      <p>Available app, device, or Google controls may allow you to change advertising preferences or withdraw consent. Withdrawing consent does not affect processing already carried out lawfully.</p>
-    </section>
-
-    <section aria-labelledby="children-title">
-      <h2 id="children-title">7. Children's privacy</h2>
-      <p>We do not knowingly collect personal information from children in violation of applicable law. If you are a parent or guardian and believe a child has provided personal information through the Game, contact us so we can review the situation and take appropriate action.</p>
-    </section>
-
-    <section aria-labelledby="changes-title">
-      <h2 id="changes-title">8. Changes to this policy</h2>
-      <p>We may update this policy as Merge Worlds develops, its services change, or legal requirements evolve. Updates will appear on this page with a revised “Last updated” date. Additional notice or consent will be provided where required by law.</p>
-    </section>
-
-    <section aria-labelledby="contact-title">
-      <h2 id="contact-title">9. Contact</h2>
-      <div class="contact">
-        <p><strong>RUSHERS ADR · Merge Worlds</strong></p>
-        <p>Email: <a href="mailto:rushersadr@gmail.com?subject=Merge%20Worlds%20Privacy%20Request">rushersadr@gmail.com</a></p>
+    <a class="brand-link" href="index.html" aria-label="Merge Worlds home">
+      <img src="merge-worlds-icon.png" alt="" width="56" height="56">
+      <div>
+        <p class="brand">Merge Worlds</p>
+        <p class="brand-caption">Privacy &amp; data</p>
       </div>
+    </a>
+  </header>
+  <main class="policy">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective date and last updated: <time datetime="2026-10-22">22 October 2026</time></p>
+      <p>Merge Worlds (“the Game”) is provided by RUSHERS Adr (“we”, “us”, or “our”). This Privacy Policy explains what information the Game stores and processes, why it is used, and the choices available to you.</p>
+      <p class="package-name">This policy applies to the Android application with package name com.adrian.mergeworlds.</p>
+      <p>For privacy questions or requests, contact <a href="mailto:rushersadr@gmail.com">rushersadr@gmail.com</a>.</p>
+    <section aria-labelledby="section-1">
+      <h2 id="section-1">1. Overview</h2>
+      <p>You can play Merge Worlds without creating an account with us. Your progress and preferences are stored on your device. Connecting to Google Play Games for cloud backups is optional.</p>
+      <p>The Game uses:</p>
+      <ul>
+        <li>Google Analytics for Firebase to understand gameplay and improve the Game.</li>
+        <li>Firebase Crashlytics to diagnose crashes and technical problems.</li>
+        <li>Google AdMob to display advertisements.</li>
+        <li>Google Play Games Services, when you choose to connect, to save and restore progress.</li>
+      </ul>
+      <p>The Game does not request access to your contacts, camera, microphone, photos, or precise GPS location.</p>
+    </section>
+    <section aria-labelledby="section-2">
+      <h2 id="section-2">2. Information stored on your device</h2>
+      <p>The Game stores information needed to operate and preserve your progress, including:</p>
+      <ul>
+        <li>Unlocked worlds, levels, experience points and discovered recipes.</li>
+        <li>Coins, energy, stored refills and regeneration timestamps.</li>
+        <li>Items on your boards, customer orders and gameplay counters.</li>
+        <li>Gameplay statistics and time played.</li>
+        <li>Language, sound and music preferences.</li>
+      </ul>
+      <p>This information remains on your device until it is replaced or removed. Clearing the Game’s app storage or uninstalling it normally removes its local data.</p>
+      <p>The Game disables Android’s automatic app-data backup. Optional Google Play Games backups are separate and are not deleted by uninstalling the Game.</p>
+    </section>
+    <section aria-labelledby="section-3">
+      <h2 id="section-3">3. Usage and gameplay statistics</h2>
+      <p>The Game uses Google Analytics for Firebase to understand how features are used, evaluate progression and balancing, and improve the playing experience.</p>
+      <p>Recorded events include starting a game mode, completing orders, discovering recipes, gaining levels, unlocking worlds and using energy refills.</p>
+      <p>Google Analytics may also process app-instance identifiers, device and operating-system information, app version, language, sessions, app interactions, and approximate location derived from an IP address.</p>
+      <p>Analytics collection is enabled automatically in the current version and does not have an in-game opt-out switch. Advertising privacy choices are handled separately.</p>
+      <p>The Game does not attach your name, email address, Google password, Google Play Games player ID, or complete saved game to its custom Analytics events. Its Firebase Analytics configuration disables advertising-ID collection and advertising personalization signals.</p>
+    </section>
+    <section aria-labelledby="section-4">
+      <h2 id="section-4">4. Crash reports and diagnostics</h2>
+      <p>The Game uses Firebase Crashlytics to identify crashes, application-not-responding errors and related technical problems.</p>
+      <p>Reports may include stack traces, application state, app version, operating-system and device information, installation identifiers, and records of actions preceding a crash.</p>
+      <p>Crash reporting is enabled automatically. The Game does not attach a custom account identifier or complete saved game to Crashlytics reports.</p>
+      <p>This information helps us investigate errors, understand their impact and improve stability.</p>
+    </section>
+    <section aria-labelledby="section-5">
+      <h2 id="section-5">5. Advertising</h2>
+      <p>The Game uses Google AdMob for rewarded advertisements that can refill energy, and interstitial advertisements when entering Zen mode.</p>
+      <p>Rewarded advertisements are shown when you choose the corresponding option. Advertising-related data processing can also occur when the advertising service initializes or requests an advertisement, even if you do not watch a rewarded advertisement.</p>
+      <p>Depending on your region, device, privacy choices and Google’s implementation, Google and its advertising partners may process:</p>
+      <ul>
+        <li>IP address and approximate location derived from it.</li>
+        <li>Advertising identifiers, app-set identifiers and other device or account-related identifiers where applicable.</li>
+        <li>Device, operating-system, language and app information.</li>
+        <li>Advertisement requests, impressions, taps and video interactions.</li>
+        <li>Diagnostic information and information used to prevent advertising fraud.</li>
+      </ul>
+      <p>This information is used to deliver and measure advertisements, provide advertising analytics, and detect fraud or abuse.</p>
+      <p>Where applicable, the Game displays Google’s advertising privacy messages. You can revisit advertising privacy choices in Settings when that option is available. You can also manage your advertising identifier and related controls through Android or Google settings.</p>
+      <p>Changing advertising preferences does not disable the Game’s separate Firebase Analytics or Crashlytics collection.</p>
+    </section>
+    <section aria-labelledby="section-6">
+      <h2 id="section-6">6. Optional Google Play Games cloud backups</h2>
+      <p>You may choose to connect Google Play Games from the Game’s Settings. A connection is not required for local play.</p>
+      <p>When connected, Google processes the player identity and authentication information needed to provide this service. The Game does not receive your Google password.</p>
+      <p>Cloud backups can include coins, energy, unlocked worlds, levels, experience, discoveries, boards, orders, gameplay statistics and related progress.</p>
+      <p>Backups and restoration are initiated through the controls in Settings. Connecting an account alone does not automatically upload your progress. Stored refill credits are excluded from cloud backups.</p>
+      <p>The Game uses Google Play Games for saved progress; it does not submit achievements or leaderboard scores.</p>
+      <p>Google manages the account and cloud infrastructure. You can manage or delete the Game’s Play Games data through your Google Play Games settings. Deleting local app data does not automatically delete cloud backups. <a href="https://support.google.com/googleplay/answer/9130646?hl=en">Google’s deletion instructions</a></p>
+    </section>
+    <section aria-labelledby="section-7">
+      <h2 id="section-7">7. Support communications</h2>
+      <p>If you email us, we receive your email address, message and any attachments you provide. We use this information to respond, investigate the reported issue and handle your request.</p>
+      <p>Please do not send passwords, payment-card details or unnecessary sensitive information.</p>
+    </section>
+    <section aria-labelledby="section-8">
+      <h2 id="section-8">8. How information is used and disclosed</h2>
+      <p>Information is processed to:</p>
+      <ul>
+        <li>Operate the Game and preserve progress.</li>
+        <li>Provide optional cloud backups and restoration.</li>
+        <li>Understand usage and improve gameplay.</li>
+        <li>Diagnose crashes and technical problems.</li>
+        <li>Deliver, measure and protect advertising.</li>
+        <li>Respond to support and privacy requests.</li>
+        <li>Meet legal obligations and protect against misuse.</li>
+      </ul>
+      <p>Google processes information through the services described above. Advertising information may also be processed by Google’s advertising partners under the applicable privacy choices and policies.</p>
+      <p>We may disclose information when required by law or reasonably necessary to investigate abuse, protect users or defend legal rights.</p>
+      <p>We do not sell personal information for money. Certain advertising disclosures may be considered a “sale”, “sharing” or targeted advertising under some privacy laws. Available rights and controls depend on your location.</p>
+    </section>
+    <section aria-labelledby="section-9">
+      <h2 id="section-9">9. Data retention</h2>
+      <p>Local progress remains on your device until removed or replaced. Optional cloud backups remain subject to your Google account controls and Google’s retention practices.</p>
+      <p>Analytics information is retained according to the applicable Google Analytics retention settings and policies.</p>
+      <p>Firebase states that Crashlytics retains crash reports and associated identifiers for 90 days before beginning their removal from live and backup systems. <a href="https://firebase.google.com/support/privacy">Firebase retention information</a></p>
+      <p>Advertising information is retained according to Google’s applicable policies and legal requirements.</p>
+      <p>Support correspondence is retained only as reasonably necessary to respond, resolve issues, maintain appropriate records and meet legal obligations.</p>
+      <p>Removing the Game does not automatically delete information already held by Google or previously submitted support communications.</p>
+    </section>
+    <section aria-labelledby="section-10">
+      <h2 id="section-10">10. Your choices and privacy rights</h2>
+      <p>You can:</p>
+      <ul>
+        <li>Play without connecting Google Play Games.</li>
+        <li>Choose whether to watch rewarded advertisements.</li>
+        <li>Manage available advertising privacy choices.</li>
+        <li>Manage or delete your Android advertising identifier.</li>
+        <li>Delete Play Games data through Google’s controls.</li>
+        <li>Remove local progress by clearing the Game’s app storage.</li>
+      </ul>
+      <p>Depending on your location, you may have rights to access, correct, delete or receive a copy of personal information, restrict or object to processing, withdraw consent where processing relies on consent, or complain to a data-protection authority.</p>
+      <p>To make a request, email <a href="mailto:rushersadr@gmail.com">rushersadr@gmail.com</a>. Explain the request and provide enough information for us to identify the relevant data. We may request proportionate verification.</p>
+      <p>We will handle requests as required by applicable law. Because much of the Game’s data uses installation identifiers rather than a named developer account, we may need additional information to locate it. Some information is controlled directly by Google and may also require using Google’s privacy tools.</p>
+    </section>
+    <section aria-labelledby="section-11">
+      <h2 id="section-11">11. Security and international processing</h2>
+      <p>The Google services used by the Game encrypt transmitted information using HTTPS/TLS. No transmission or storage system can be guaranteed completely secure.</p>
+      <p>Google and its service providers may process information outside your country. Their applicable terms describe the safeguards used for international transfers.</p>
+    </section>
+    <section aria-labelledby="section-12">
+      <h2 id="section-12">12. Children’s privacy</h2>
+      <p>Parents or guardians who believe that a child’s personal information has been processed inappropriately through the Game should contact <a href="mailto:rushersadr@gmail.com">rushersadr@gmail.com</a>.</p>
+      <p>We will investigate and take appropriate action under applicable law. Google services may also apply age restrictions, parental controls and consent requirements.</p>
+    </section>
+    <section aria-labelledby="section-13">
+      <h2 id="section-13">13. Third-party privacy information</h2>
+      <p>Further information is available in:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a></li>
+        <li><a href="https://policies.google.com/technologies/ads">Google advertising technologies</a></li>
+        <li><a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="section-14">
+      <h2 id="section-14">14. Changes to this policy</h2>
+      <p>We may update this policy when the Game, its services or legal requirements change. The revised policy will show a new update date. Additional notice or consent will be provided where legally required.</p>
+    </section>
+    <section aria-labelledby="section-15">
+      <h2 id="section-15">15. Contact</h2>
+      <p>RUSHERS Adr</p>
+      <p>Email: <a href="mailto:rushersadr@gmail.com">rushersadr@gmail.com</a></p>
     </section>
   </main>
-
-  <footer class="footer">Merge Worlds · Privacy Policy</footer>
+  <footer class="footer"><a href="index.html">Back to Merge Worlds</a> · RUSHERS Adr</footer>
 </body>
 </html>
